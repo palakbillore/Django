@@ -1,0 +1,52 @@
+/* // practice2
+*{
+    margin: 0px;
+}
+
+div{
+    background-color: aqua;
+}
+ul{ 
+    display: flex;
+    justify-content: space-between;
+    }
+ 
+a{
+    color: black;
+    text-decoration: none;
+    font-size:20px;
+}
+  li{
+    list-style-type: none;
+  } */
+
+  /* // practice3 */
+  div{
+    background-color: blueviolet;
+  }
+
+.plk{
+    color: black;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+a{
+    background-color: rosybrown;
+}
+.outer{
+    height:400px;
+    width: 400px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.inner{
+    height:200px;
+    width:200px;
+    background-color:brown ;
+    align-items: center;
+}
+ 

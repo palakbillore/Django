@@ -1,0 +1,593 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="style4.css">
+<body>
+ <header >
+  <nav>
+    <ul>
+      <li><a href="#profile">Profile</a> </li>
+      <li> <a href="#Skills">Skills</a></li>
+      <li><a href="#Portfolio">Portfolio</a> </li>
+      <li><a href="#contact">Contact</a> </li>
+    </ul>
+  </nav>
+ </header>
+ 
+ <section id="profile">
+  <h1>Palak </h1>
+  <div class="para">
+    <img src="/pexels-isabella-graciano-89383573-30133491.jpg" alt="Profile Photo">
+    <p class="p">My name is  Palak I am 20 years old I am persuing Btech from SGSITS college I will complete my graduation in 2027 in Information Technology. At this time i am in my second year and i am doing DSA and WEBD  </p> 
+  </div>
+  
+</section> 
+
+<section id="Skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li> 
+    <li>JavaScript</li>
+    <li>Other relevant skills</li>
+  </ul>
+</section>
+
+<section id=" Portfolio">
+  <h2>Portfolio</h2>
+  <div class="projects">
+  <div class="project">
+  <img src=" "alt="Project 1">
+  <p> Project1 one Descerption </p>
+  </div>
+  </div>
+</section>
+<section id="conatct">
+  <h2>contact</h2>
+  <form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="message">messsage> </label>
+    <textarea if="message" name="message" required></textarea>
+  <button type="submit"> submit </button> 
+  </form>
+</section>
+
+<footer > 
+  <p> Palak Billore .All right reserved </p>
+</footer>
+</body>
+</html> -->
+
+
+<!-- portfolio of nandini kushwah  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+
+        header {
+            background: linear-gradient(rgb(255 154 154 / 70%), rgba(0, 0, 0, 0.7)), url(/api/placeholder/1920/1080);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            color: white;
+        }
+
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+
+        #photo {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+        }
+
+
+        #about {
+            background-color: rgb(217, 175, 199);
+        }
+
+
+        #home {
+            background-color: rgb(0 185 234 / 95%);
+        }
+        section {
+            padding: 5rem 2rem;
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        #home {
+            background-color: rgb(206, 180, 195);
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+
+        .skill-card {
+            background: rgb(216, 194, 194);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+
+        .project-card {
+            background: rgb(189, 181, 181);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+
+        button {
+            background: #007bff;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+
+        button:hover {
+            background: #0056b3;
+        }
+
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+           
+            h2 {
+                font-size: 2rem;
+            }
+
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <header id="home">
+        <img  id="C:\Users\USER\Desktop\html\Screenshot_2025-02-14-08-40-25-60_99c04817c0de5652397fc8b56c3b3817.jpg " alt="photo">
+        <h1> Palak Billore </h1>
+        <p class="subtitle">A 2nd Year Information Technology Student</p>
+    </header>
+
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hello! </p>
+    </section>
+
+
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skill-card">
+                    <h3> Web Development</h3>
+                    <p>HTML5, CSS3 </p>
+                </div>
+                <div class="skill-card">
+                    <h3> Programming Languages </h3>
+                    <p> C , C++ , Java , Python</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Technologies</h3>
+                    <p>Git, VS Code </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <!-- <img src="/api/placeholder/400/200" alt="Project 1"> -->
+                    <div class="project-info">
+                        <h3>Project 1</h3>
+                        <p>food menu website</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <!-- <img src="/api/placeholder/400/200" alt="Project 2"> -->
+                    <div class="project-info">
+                        <h3>Project 2</h3>
+                        <p> Amazon Clone </p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <!-- <img src="/api/placeholder/400/200" alt="Project 3"> -->
+                    <div class="project-info">
+                        <h3>Project 3</h3>
+                        <p>Travel Blog Website</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Palak Billore . All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!-- palak portfolio -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 1rem auto;
+            display: block;
+            background-color: #ddd;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2c3e50;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill-tag {
+            background-color: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-img"></div>
+        <h1>John Doe</h1>
+        <p>Computer Science Student</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I'm a third-year Computer Science student at State University, passionate about web development and artificial intelligence. I love solving complex problems and creating innovative solutions.</p>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <h3>State University</h3>
+            <p>Bachelor of Science in Computer Science</p>
+            <p>Expected Graduation: 2025</p>
+            <p>GPA: 3.8/4.0</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Git</span>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Weather App</h3>
+                    <p>A web application that shows real-time weather data using API integration.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Task Manager</h3>
+                    <p>A full-stack application for managing daily tasks and schedules.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: john.doe@email.com</p>
+            <p>LinkedIn: linkedin.com/in/johndoe</p>
+            <p>GitHub: github.com/johndoe</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+</html> -->

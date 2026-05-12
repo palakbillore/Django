@@ -1,0 +1,30 @@
+body{
+    background-color: grey;
+    
+}   
+h1{
+ color: blue
+  }
+  
+ul{
+    list-style: circle;
+}
+ol{
+    list-style: numbers ; 
+}
+.box{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ }
+ a{
+    text-decoration: none;
+ }
+a:hover{
+    color : rgb(128, 0, 4);
+   font-size: 30px;
+}
+div{
+    font-size: large;
+}
